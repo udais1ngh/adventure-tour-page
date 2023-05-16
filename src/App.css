@@ -1,38 +1,366 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app{
   min-height: 100vh;
+}
+header{
+  background-image: url("./pics/nav1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ua{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 50px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+gap: 20px;
+min-height:100vh ;
+background-color:rgba(194, 194, 194, 0.3);
+flex-wrap: wrap;
+}
+.img1{
+  height: 500px;
+  width: 320px;
+
+  border-radius: 5px;
+  background-image: url(./pics/ad5.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+  
+
+}
+.sf{
+  margin-right: 10px;
+}
+.h2{
+  color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-size: xx-large;
+}
+.r{
+  display: flex;
+ flex-direction: column;
+ gap: 20px;
+ 
+}
+.right1{
+ background-image: url(./pics/scuba.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 240px;
+ width: 300px;
+ border: 1px;
+  border-radius: 5px;
+}
+.right2{
+  background-image: url(./pics/ad9.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 240px;
+ width: 300px;
+ border: 1px;
+  border-radius: 5px;
+}
+.cards{
+  display: flex;
+  gap: 10px;
+ 
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ border: 1px;
+ border-radius: 5px;
+ background-color: white;
+
+}
+.cd{
+  padding: 10px;
+  
+}
+.sport{
+font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.icons{
+  display: flex;
+  gap: 30px;
+  padding-top: 10px;
+}
+.watch{
+  display: flex;
+  align-items: center;
+}
+.p{
+  color: gray;
+  padding-left: 5px;
+}
+.utility{
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+.iconss{
+  height: 60px;
+  width: 60px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(194, 194, 194, 0.3);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: x-small;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  .perform{
+    display: flex;
+    padding-top: 15px;
+    gap: 3px;
+    margin-left: -4px;
+  }
+.pl{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid black ;
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(0, 140, 255);
+  
+}
+.star{
+  display: flex;
+  gap: 8px;
+  border: 1px;
+  padding-top: 5px;
+ 
+}
+.line{
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  height: 240px;
+}
+.rvalue{
+  text-align: center;
+  background-color: #FFC300 ;
+  height: 22px;
+  width: 40px;
+  border: 1px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rev{
+  color:  rgba(128, 128, 128, 0.9);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.revs{
+  color:  rgba(128, 128, 128, 0.95);
+  text-align: center;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  padding-top: 15px;
+}
+.price{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size:x-large;
+   padding-top: 8px;
+   color: rgba(255, 0, 0, 0.8);
+}
+
+.rating{
+  display:flex ;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btnn{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.sf{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+@media(max-width:1200px){
+  .r{
+    gap: 10px;
+  }
+  .b{
+    margin-bottom: 5px;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+  }
+  .line{
+    display: none;
+  }
+  .cd{
+    padding: 5px;
+    
+  }
+  .sport{
+  font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .icons{
+    display: flex;
+    gap: 5px;
+    padding-top: 6px;
+    transform: translateY(-70px);
+    padding-left: 10px;
+  }
+  .watch{
+    display: flex;
+    align-items: center;
+  }
+  .p{
+    color: gray;
+    padding-left: 2px;
+  }
+  .utility{
+    display: flex;
+    gap: 4px;
+    padding-top: 1px;
+  }
+  .iconss{
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(194, 194, 194, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+    .perform{
+      display: flex;
+      padding-top: 15px;
+      gap: 3px;
+      
+    }
+  .pl{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black ;
+    border-radius: 20px;
+    padding: 4px;
+    color: rgb(0, 140, 255);
+    font-size: 0.3cm;
+  }
+  .star{
+    display: flex;
+    gap: 2px;
+    border: 1px;
+    padding-top: 2px;
+   
+  }
+  
+  .rvalue{
+    text-align: center;
+    background-color: #FFC300 ;
+    height: 22px;
+    width: 40px;
+    border: 1px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .rev{
+    color:  rgba(128, 128, 128, 0.9);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .revs{
+    color:  rgba(128, 128, 128, 0.95);
+    text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:small;
+    padding-top: 5px;
+  }
+  .price{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size:large;
+     padding-top: 8px;
+     color: rgba(255, 0, 0, 0.8);
+  }
+  
+  .rating{
+    display:flex ;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .btnn{
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+  }
+  .sf{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 65px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+  }
+
+.h3{
+  font-size: small;
+}
+.st{
+  display: flex;
+  flex-direction: column;
+}
+.ua{
+  font-size: 0.6cm;
+  padding-left: 20px;
+}
+
+.body{
+  height: 500px;
+  width: 100%;
+  margin-top: 20px;
+}
+.img1{
+  height: 500px;
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+}
+.app{
+  min-height: 100vh;
+}
+.p{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.b{
+  margin: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
